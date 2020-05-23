@@ -4,7 +4,7 @@ import VideoDetails from "./VideoDetails"
 
 import VideoList from "./VideoList"
 import Axios from "axios"
-var KEY = "AIzaSyBHbfi4UpUO42TGI0moBHvN5fjNEc6YM28"
+var KEY = ""
 class App extends React.Component {
 	state = {
 		videos: [],
