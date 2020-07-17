@@ -2,25 +2,25 @@ import React from "react"
 import VideoItem from "./VideoItems"
 
 class VideoList extends React.Component {
-	state = {
-		renderedList: []
-	}
-	componentDidUpdate(preProp) {
-		if (preProp !== this.props) {
-			this.setState({
-				renderedList: this.props.videos.map((videoDetails) => {
-					return (
-						<VideoItem
-							onVideoSelect={this.props.onVideoSlect}
-							data={videoDetails}
-							key={videoDetails.etag}
-						/>
-					)
-				})
-			})
-		}
-	}
-	/*
+  state = {
+    renderedList: [],
+  }
+  componentDidUpdate(preProp) {
+    if (preProp !== this.props) {
+      this.setState({
+        renderedList: this.props.videos.map((videoDetails) => {
+          return (
+            <VideoItem
+              onVideoSelect={this.props.onVideoSlect}
+              data={videoDetails}
+              key={videoDetails.etag}
+            />
+          )
+        }),
+      })
+    }
+  }
+  /*
 	state = {
 		videolistVideos: []
 	}
@@ -39,20 +39,20 @@ class VideoList extends React.Component {
 		}
 	}
 	*/
-	render() {
-		return (
-			<div
-				style={{
-					display: "flex",
-					flexDirection: "column",
-					alignItems: "center",
-					marginTop: "5vh"
-				}}
-			>
-				{this.state.renderedList}
-			</div>
-		)
-	}
+  render() {
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          marginTop: "5vh",
+        }}
+      >
+        {this.state.renderedList}
+      </div>
+    )
+  }
 }
 
 export default VideoList
