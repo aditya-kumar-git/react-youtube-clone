@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+}
+a {
+  fill: black;
+
+  color: white;
+  text-decoration: none;
+}
+.searchButton {
+  background-color: white;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.Banner {
+  background-color: #d1302b;
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  color: black;
+  font-size: 1rem;
+}
+.mainLogo {
+  fill: white;
+  height: 7rem;
+  width: 7rem;
+}
+
+.catVideos {
+  display: flex;
+  overflow: scroll;
+}
+
+.catTitle {
+  font-weight: 600;
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+.divider {
+  background-color: #d1302b;
+  width: 50px;
+  height: 5px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.videoBlock {
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+}
+.videoBlockVID {
+  height: 15rem;
+}
+.videoBlockTXT {
+  font-size: 0.8rem;
+}
+
+//!SEARCH BAR
+
+.searchForm {
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  display: flex;
+}
+.searchButton {
+  height: 2rem;
+  width: 2rem;
+}
+.searchBar {
+  border: none;
+  outline: none;
+  width: 70vw;
+  height: 5vh;
+  text-align: center;
+  border-radius: 5px;
+}
+
+//!SEARCH BLOCK
+
+.searchVideoBlock {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: fit-content;
+  // background-color: red;
+}
+.searchELE {
+  width: 50%;
+}
+.searchVideo {
+  height: 30rem;
+}
+.searchChannel {
+  border-radius: 50%;
+  height: 30rem;
+  // width: 0rem;
+}
+.searchTitle {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.searchTitleChannel {
+  text-align: center;
+}
+.searchChannelTitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.searchVideoBlockCon {
+  display: flex;
+}
+.searchDesc {
+  margin-top: 1rem;
+  font-size: 1rem;
+  width: 40rem;
+  font-weight: 100;
+  opacity: 0.8;
+}
+.searchVideoCon {
+  display: flex;
+  width: 100vw;
+}
+
+.searchVideoConData {
+  padding-left: 2rem;
+  padding-top: 5rem;
+  width: 50%;
+  padding-right: 2rem;
+  // padding-left: 3rem;
+  // background-color: red;
+}
+
+.vidDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.videoPlayer {
+  height: 70vh;
+  width: 150vh;
+  border: none;
+  margin-top: 5rem;
+}
+.videoDetailText {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 800;
+}
